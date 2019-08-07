@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    !=helmet.meta.toString()
+    !=helmet.title.toString()
+
+    each style in styles
+      link(href='/' + style, rel='stylesheet')
+
+    !=helmet.link.toString()
+    
+    each scriptjs in scripts
+      script(src='/' + scriptjs, defer)
+
+  body
+    script(type='text/javascript').
+      window.__PRELOADED_STATE__=!{preloadState};
+    main#wrapper!=htmlMarkup
