@@ -34,7 +34,7 @@
     "reset-css": "^4.0.1",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
-    "serialize-javascript": "^1.5.0"
+    "serialize-javascript": "^2.1.1"
   },
   "devDependencies": {
     "hefesto": "^0.1.0"
